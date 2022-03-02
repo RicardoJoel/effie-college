@@ -1,0 +1,86 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Others */
+h1 {font-size:40px}
+h2 {font-size:36px}
+h3 {font-size:32px}
+h4 {font-size:28px}
+h5 {font-size:24px}
+h6 {font-size:20px}
+p {white-space:pre-line}
+label {font-size:smaller; margin:12px 0}
+.edt {float:right; margin:18px 0 12px 12px}
+.files {display:flex; align-items:baseline}
+.title {color:#bd9e56; font-weight:500; font-size:10px}
+.btnhistory {color:#bd9e56; float:left}
+.modal-body hr {border:1px solid #bd9e56; opacity: 0.4; margin: 20px 0}
+::placeholder {color:#777 !important}
+.sections {text-align:center}
+.sections label {margin:0.5em 2.1em 2em}
+.step {
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	line-height: 2.7em;
+	border-radius: 1.5em;
+	border: 5px solid #fff;
+	background-color: #e1e1e1;
+	color: #bd9e56;
+	margin: -3em 1.5em 0;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 20px;
+}
+  
+.step:first-child::before {
+	display: none;
+}
+  
+.step.active {
+	background-color: #bd9e56;
+	color: #fff;
+}
+  
+.active ~ .step {
+	background-color: #e1e1e1;
+}
+  
+.active ~ .step::before {
+	background-color: #e1e1e1;
+}
